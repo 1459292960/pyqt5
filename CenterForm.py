@@ -33,4 +33,5 @@ if __name__=='__main__':
     # app.setWindowIcon(QIcon(r'D:\BrowserDownload\1.icon'))
     main=IconForm1()  # 创建类的实例
     main.show()
+    # 调用exec_()方法，程序进入主循环
     sys.exit(app.exec())
