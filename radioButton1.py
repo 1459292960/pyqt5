@@ -6,7 +6,7 @@ class QRadioDemo(QWidget):
         super(QRadioDemo,self).__init__()
         self.initUI()
     def initUI(self):
-        self.setWindowTitle('123')
+        self.setWindowTitle('radiobutton测试')
         layout=QHBoxLayout()
 
         self.btn1=QRadioButton('单选按钮1')
@@ -15,6 +15,7 @@ class QRadioDemo(QWidget):
         layout.addWidget(self.btn1)
 
         self.btn2=QRadioButton('单选按钮2')
+        # 使用lambda 表达式传递参数，神奇
         self.btn2.toggled.connect(lambda:self.buttonState(self.btn2))
         layout.addWidget(self.btn2)
         self.setLayout(layout)
