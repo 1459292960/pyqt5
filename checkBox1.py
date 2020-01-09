@@ -1,6 +1,9 @@
 import sys
 from PyQt5.QtWidgets import QApplication,QMainWindow,QHBoxLayout,QCheckBox,QWidget
-
+'''
+绑定
+stateChanged
+'''
 class CheckBoxDemo(QMainWindow):
     def __init__(self):
         super(CheckBoxDemo,self).__init__()
